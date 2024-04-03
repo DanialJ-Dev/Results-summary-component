@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Hanken;
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.2rem;
+    font-family: Hanken;
+    background-color: #ebf1ff;
+}
+
+.container{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    border-radius: 20px;
+    background-color:#fff ;
+}
+
+.result{
+    width: 50%;
+    background: linear-gradient(#7857ff, #2e2be9);
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-title{
+    margin: 10px 10px 25px 10px;
+    color: #c8c7ff;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.circle{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#4e21ca, #2421ca00);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.total{
+    font-size: 0.8rem;
+    color: #c8c7ff;
+}
+
+.alert{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.description{
+    font-size: 1.1rem;
+    width: 250px;
+    margin: 10px;
+    color: #c8c7ff;
+}
+
+.summary{
+    width: 50%;
+    padding: 30px;
+    font-weight: 500;
+}
+
+.sec2-title{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 8px 0 30px 0;
+}
+
+.summary-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 img{
+    margin-right: 8px;
+}
+
+.section2{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #08011d;
+}
+.section2 span{
+    color: #bbbbc4;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.reaction{
+    color: #ff5757;
+    background-color: rgba(255, 87, 87, 0.1);
+}
+.memory{
+    color: #ffb01f;
+    background-color: rgba(255, 177, 31, 0.1);
+}
+.verbal{
+    color: #00bd91;
+    background-color: rgba(0, 189, 145, 0.1);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+    background-color: rgba(5, 30, 255, 0.1);
+}
+
+button{
+    margin-top: 35px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: #303b5a;
+    padding: 15px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+button:hover{
+    background: linear-gradient(#7857ff, #2e2be9);
+}
+
+@media (max-width: 480px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .result{
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+    .sec-title{
+        margin: 5px;
+    }
+    .alert{
+        font-size: 1.7rem;
+    }
+    .description{
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    .summary{
+        width: 100%;
+    }
+    .sec2-title{
+        margin: 5px;
+    }
+    button{
+        margin: 20px 0;
+    }
+}
